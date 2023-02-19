@@ -116,10 +116,9 @@ class ItemService {
     // 카테고리가 없으면
     if (!category) {
       const result = await this.itemRepository.findAllItem(gender, theme);
-
       return result;
     } else {
-      console.log('여기');
+      // console.log('여기');
       const result = await this.itemRepository.findAllItemWithCategory(
         gender,
         theme,

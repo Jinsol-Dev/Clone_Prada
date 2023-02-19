@@ -95,7 +95,7 @@ class ItemRepository {
 
   //테마별, 카테고리별 상품 조회
   findAllItem = async (gender, theme) => {
-    console.log('gender, theme 2개: ', gender, theme);
+    // console.log('gender, theme 2개: ', gender, theme);
     try {
       const items = await ItemDetail.findAll({
         where: {
